@@ -1,5 +1,5 @@
 html{
-     overflow-x: hidden;
+     overflow: hidden;
     background-image: url('../image/bg1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -13,7 +13,7 @@ html{
     position: relative;
 }
 body{
-    overflow-x: hidden;
+    overflow: hidden;
     background-image: url('../image/bg1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -189,7 +189,7 @@ header p{
     position: fixed;
     z-index: 999999;
     background: #5C1313;
-    
+    transition: 1.5s;
 }
 .la-timer{
     width: 30%;
