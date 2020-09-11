@@ -189,7 +189,7 @@ header p{
     position: fixed;
     z-index: 999999;
     background: #5C1313;
-    transition: 1.5s;
+    transition: 3s;
 }
 .la-timer{
     width: 30%;
