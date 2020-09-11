@@ -1,5 +1,5 @@
 html{
-     overflow: hidden;
+     overflow-x: hidden;
     background-image: url('../image/bg1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -13,7 +13,7 @@ html{
     position: relative;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     background-image: url('../image/bg1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
