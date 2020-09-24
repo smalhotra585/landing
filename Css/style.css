@@ -230,7 +230,7 @@ headers p{
 /* MODAL
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .modal {
-  position: fixed;
+/*  position: fixed;*/
   top: 0;
   left: 0;
   right: 0;
@@ -313,8 +313,14 @@ headers p{
     color: #5C1313;
 }
 .blur{
+    opacity: 0;
   filter: blur(8px);
   -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+}
+#body{
+    opacity: 1;
 }
 .close-modal{
     background-color: #5C1313;
