@@ -239,22 +239,23 @@ headers p{
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background: transparent;
+/*  background: transparent;*/
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
   transition: 2s;
+ z-index: 1000;
 }
 
-.modal.is-visible {
+.is-visible {
   visibility: visible;
   opacity: 1;
 }
 
 .modal-dialog {
-  position: relative;
+/*  position: relative;*/
   max-width: 800px;
-  max-height: 80vh;
+  min-height: 80px;
   border-radius: 5px;
   overflow: auto;
   cursor: default;
@@ -312,6 +313,9 @@ headers p{
     outline: none;
     color: #5C1313;
 }
+#body{
+    opacity: 1;
+}
 .blur{
     opacity: 0;
   filter: blur(8px);
@@ -319,8 +323,10 @@ headers p{
     -moz-filter: blur(8px);
     -o-filter: blur(8px);
 }
-#body{
-    opacity: 1;
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ios.blur {
+        -webkit-backdrop-filter: blur(10px); //Blurs bg behind it
+    }
 }
 .close-modal{
     background-color: #5C1313;
