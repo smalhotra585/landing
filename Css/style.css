@@ -244,7 +244,7 @@ headers p{
   visibility: hidden;
 -webkit-visibility: hidden;
   opacity: 0;
-  transition: 2s;
+/*  transition: 2s;*/
  z-index: 1000;
 }
 
