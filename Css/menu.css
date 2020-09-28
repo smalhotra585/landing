@@ -682,6 +682,7 @@ font-style: normal;
    display: none;
 }
 #placeOrder span.animation-counter{
+    animation-delay: 1s;
     animation: count .4s ease-in-out;
    -webkit-animation: count .4s ease-in-out;
     -moz-animation: count .4s ease-in-out;
@@ -708,6 +709,7 @@ font-style: normal;
    from{
        top: -18rem;
    }
+/*
    25%{
        top: -8rem;
    }
@@ -717,6 +719,7 @@ font-style: normal;
    75%{
        top: -10rem;
    }
+*/
    to{
        top: -12rem;
    }

@@ -64,12 +64,16 @@ $(".incdecbutton").on("click", function() {
 
 //Add To cart Animation
 var count= 0;
-$(".addToCart").on("click",function() {
-    count++;
-    $('#counter').text(count)
-    $('#counter').removeClass('animation-counter')
-    setTimeout(() => 
-                      $('#counter').addClass('animation-counter'),1);
+$(document).ready(function() {
+    $(".addToCart").click(function(event) {
+        count++;
+        $('#counter').removeClass('animation-counter');
+        $('#counter').text(count);
+        setTimeout(function() {
+                $('#counter').addClass('animation-counter');
+        }, 200);
+        event.preventDefault();
+        });
 });
 
 //Sticky Navbar Function
