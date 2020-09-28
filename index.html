@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" media="screen" href="Css/bootstrap.min.css">
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/menu.css">
     <link rel="shortcut icon" type="image/png" href="image/favicon.jpg">
 	<title>Menu Card-Taj India</title>
    
@@ -14,10 +14,104 @@
 
 
 <body>
+<!--Preloader-->
+    <div class="preloader-wrapper">
+            <div class="preloder-bg"></div>
+            <div class="la-timer la-dark la-3x">
+                <div>
+                </div>
+            </div>
+        </div>
+<!--Preloader-->
 
+<!--Pop Up Box-->
+<div class="modal" id="modal2" data-animation="mixInAnimations">
+  <div class="modal-dialog">
+    <header class="modal-header">Call Waiter</header>
+    <section class="modal-content">
+      <p>Your Waiter Will be Here Soon.</p>
+      <button id="close" class="close-modal" aria-label="close modal" data-close>
+        Close  
+      </button>
+    </section>
+  </div>
+</div>
+
+<!--Pop Up Box-->
+
+<!--Navbar Starts Here -->   
+    <nav id="navbar" class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button style="color: #FFECB1" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span style="background-color: #FFECB1" class="sr-only">Toggle navigation</span>
+        <span style="background-color: #FFECB1" class="icon-bar"></span>
+        <span style="background-color: #FFECB1" class="icon-bar"></span>
+        <span style="background-color: #FFECB1" class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="image/Taj_India_White_Logo-1.png" alt=""></a>
+      <a href="#" id="callButton" type="button" class="open-modal" data-open="modal2"><img src="image/waiter.png" alt=""></a>   
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       
+        
+        <li><a href="#">
+           All  
+        </a></li>
+        <li><a href="#">Homepage</a></li>
+        <li><a href="#">Menu Card</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav> 
+<!--Navbar Ends Here-->
+ 
+<!--SearchBar-->
+<div class="row">
+               <div class="col-xs-12">
+                   <form method="get" action="/search" id="searchbox5">
+                    <input id="search51" onkeyup="myfood()" name="q" type="text" size="40" placeholder="Search..." />
+                </form>
+               </div>
+           </div>  
+<!--SearchBar-->
 
  
+<!--ImageSlider Starts Here-->
+  <div class="imageSlider">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="mySlides fade">
+                  <img id="id1" src="">
+                  <div class="text">Welcome To</div>
+                </div>
 
+                <div class="mySlides fade">
+                  <img id="id2" src="">
+                  <div class="text">Taj India Restaurant</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img id="id3" src="">
+                  <div class="text">Here Food is Cooked With Love</div>
+                </div>
+
+        </div>
+     </div>
+    </div> 
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+<!--ImageSlider Ends Here -->
+ 
 
 <!--Menu Starts Here   -->
     <section id="menu">
@@ -300,8 +394,9 @@
 <!--Menu Ends Here-->
 
 <!--Parallax Starts Here-->
-   <div class="parallax" style="background-image: url(image/Parralax/parralax.jpg)">
-        <div class="center">
+   <div class="parallax">
+       <img src="image/Parralax/parralax.jpg" alt="">
+        <div class="centers">
              <h1 id="snacks">Kuch Halka Fulka (Vorspeisen)</h1>
        </div>
   </div>
@@ -421,8 +516,10 @@
 <!--Menu 2 ends Here-->
 
 <!--Parallax Starts Here-->
-   <div class="parallax" style="background-image: url(image/Parralax/parralax.jpg)">
-        <div class="center">
+
+   <div class="parallax">
+       <img src="image/Parralax/parralax.jpg" alt="">
+        <div class="centers">
              <h1 id="snacks">Kuch Halka Fulka (Vorspeisen)</h1>
        </div>
   </div>
@@ -575,11 +672,13 @@
 <!--Menu 3 ends Here-->  
 
 <!--Parallax Starts Here-->
-   <div id="sss" class="parallax">
-        <div class="center">
-             <h1>Salate</h1>
+   <div class="parallax">
+       <img src="image/Parralax/parralax.jpg" alt="">
+        <div class="centers">
+             <h1 id="snacks">Kuch Halka Fulka (Vorspeisen)</h1>
        </div>
   </div>
+
 <!--Parallax Ends Here-->
  
 
@@ -696,11 +795,13 @@
 
 
 <!--Parralax Starts Here  -->
-   <div class="parallax">
-            <div class="center">
-             <h1 id="breads">Naan Brote</h1> 
+  <div class="parallax">
+       <img src="image/Parralax/parralax.jpg" alt="">
+        <div class="centers">
+             <h1 id="snacks">Kuch Halka Fulka (Vorspeisen)</h1>
        </div>
   </div>
+
 <!--Parallax Ends Here-->
 
 
@@ -851,10 +952,12 @@
 
 <!--Paraalax Starts Here   -->
    <div class="parallax">
-            <div class="center">
-             <h1 id="biryani">Biryaani</h1> 
+       <img src="image/Parralax/parralax.jpg" alt="">
+        <div class="centers">
+             <h1 id="snacks">Kuch Halka Fulka (Vorspeisen)</h1>
        </div>
   </div>
+
 <!--Parallax Ends Here-->
  
 
@@ -1176,8 +1279,13 @@
             </div>
         </footer>    
 <!--Footer Ends Here-->
+<div id="not-found" style="font-size: 22px;color: #FFECB1;text-align: center;font-weight: bold;margin-top: 10px;display: none">No Result Found</div>
+   <p id="extra" style="padding-bottom: 100px;display: none"></p>
+
+   
 
     <script src="Js/jquery.min.js"></script>
+	<script src="Js/menu.js"></script>
 	    
 
 	

@@ -574,50 +574,25 @@ font-family: 'Cabin', sans-serif;
 /*###########################################################################################################*/
 /*Parrlax Starts*/
 /*###########################################################################################################*/
-.parallax {
-  height: auto;
-  padding: 180px 0px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.parallax:after{
-position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 100;
-  content: ' ';
-}
-.parallax .center{
-   font-weight: bolder;
-   color: #fff;
+
+.parallax{
+    position: relative;
    text-align: center;
+    color: #fff;
 }
-.parallax .center h1{
-   padding-top: 100px;
-/*   padding-bottom: 70px;*/
+.parallax img{
+    width: 100%;
+    height: 300px;
+}
+.parallax .centers h1{
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
    font-size: 50px;
    font-family: 'Oswald', sans-serif;
 }
 
-@media (min-width: 768px){
-   .parallax{
-       height: 300px;
-       background-size: cover;
-   }
-   .parallax .center h1{
-       width: 100%;
-       padding-top: 100px;
-       padding-bottom: 0px;
-       font-size: 70px;
-   }
-}
 /*###########################################################################################################*/
 /*Parralax Ends Here*/
 /*###########################################################################################################*/
@@ -707,7 +682,10 @@ font-style: normal;
    display: none;
 }
 #placeOrder span.animation-counter{
-   animation: count .4s ease-in-out;
+    animation: count .4s ease-in-out;
+   -webkit-animation: count .4s ease-in-out;
+    -moz-animation: count .4s ease-in-out;
+    -o-animation: count .4s ease-in-out;
 }
 #placeOrder span{
    user-select: none;
@@ -729,25 +707,41 @@ font-style: normal;
 @keyframes count{
    from{
        top: -18rem;
-       transform: rotate(120deg);
    }
    25%{
        top: -8rem;
-       transform: rotate(80deg);
    }
    50%{
        top: -9rem;
-       transform: rotate(60deg);
    }
    75%{
        top: -10rem;
-       transform: rotate(30deg);
    }
    to{
        top: -12rem;
-       transform: rotate(0);
    }
 }
+/*
+@-webkit-keyframes count{
+   from{
+       top: -18rem;
+   }
+   25%{
+       top: -8rem;
+   }
+   50%{
+       top: -9rem;
+   }
+   75%{
+       top: -10rem;
+   }
+   to{
+       top: -12rem;
+   }
+}
+
+*/
+
 
 /*###########################################################################################################*/
 /*Place Order Ends*/
