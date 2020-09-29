@@ -66,15 +66,18 @@ $(".incdecbutton").on("click", function() {
 var count= 0;
 $(document).ready(function() {
     $(".addToCart").click(function(event) {
+        event.preventDefault();
         count++;
         $('#counter').removeClass('animation-counter');
+        $('#counter').width();
         $('#counter').text(count);
         setTimeout(function() {
                 $('#counter').addClass('animation-counter');
-        }, 200);
-        event.preventDefault();
+        }, false);
+        
         });
 });
+
 
 //Sticky Navbar Function
         window.onscroll = function() {myFunction()};
