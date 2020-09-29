@@ -753,7 +753,7 @@ font-style: normal;
 /*Small Paralax Divider*/
 /*###########################################################################################################*/
 #parralaxaside{
- height: auto;
+ height: 400px;
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
