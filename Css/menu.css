@@ -706,10 +706,10 @@ font-style: normal;
 }
 
 @keyframes count{
-   from{
+   0%{
        top: -18rem;
    }
-   to{
+   100%{
        top: -12rem;
    }
 }
