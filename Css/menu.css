@@ -683,6 +683,7 @@ font-style: normal;
 }
 #placeOrder span.animation-counter{
     animation-delay: 1s;
+    -webkit-animation-delay: 1s;
     animation: count .4s ease-in-out;
    -webkit-animation: count .4s ease-in-out;
     -moz-animation: count .4s ease-in-out;
@@ -713,6 +714,34 @@ font-style: normal;
        top: -12rem;
    }
 }
+@-webkit-keyframes count{
+   0%{
+       top: -18rem;
+   }
+   100%{
+       top: -12rem;
+   }
+}
+@-moz-keyframes count{
+   0%{
+       top: -18rem;
+   }
+   100%{
+       top: -12rem;
+   }
+}
+@-o-keyframes count{
+   0%{
+       top: -18rem;
+   }
+   100%{
+       top: -12rem;
+   }
+}
+
+
+
+
 
 
 /*###########################################################################################################*/
