@@ -709,26 +709,6 @@ font-style: normal;
    from{
        top: -18rem;
    }
-/*
-   25%{
-       top: -8rem;
-   }
-   50%{
-       top: -9rem;
-   }
-   75%{
-       top: -10rem;
-   }
-*/
-   to{
-       top: -12rem;
-   }
-}
-/*
-@-webkit-keyframes count{
-   from{
-       top: -18rem;
-   }
    25%{
        top: -8rem;
    }
@@ -742,8 +722,6 @@ font-style: normal;
        top: -12rem;
    }
 }
-
-*/
 
 
 /*###########################################################################################################*/
