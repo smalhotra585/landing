@@ -73,7 +73,7 @@ $(document).ready(function() {
         $('#counter').text(count);
         setTimeout(function() {
                 $('#counter').addClass('animation-counter');
-        }.bind(this),1);
+        }.bind(this),250);
         
         });
 });
