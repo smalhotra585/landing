@@ -73,11 +73,10 @@ $(document).ready(function() {
         $('#counter').text(count);
         setTimeout(function() {
                 $('#counter').addClass('animation-counter');
-        }, false);
+        }.bind(this),1);
         
         });
 });
-
 
 //Sticky Navbar Function
         window.onscroll = function() {myFunction()};
@@ -102,6 +101,7 @@ $(document).ready(function() {
                 if (content.style.maxHeight){
                     content.style.maxHeight = null;
                 } else {
+                    content.style.display = "block";
                     content.style.maxHeight = content.scrollHeight + "px";
                 } 
             });
@@ -186,6 +186,7 @@ $("#search51").keyup(function(){
         $(".double-border-seprator").addClass('hiddens');
         $(".dot").addClass('hiddens');
         $("#extra").css('display','block')
+        $(".content").css('display','none')
     }
     else{
         $(".parallax").removeClass('hiddens');
